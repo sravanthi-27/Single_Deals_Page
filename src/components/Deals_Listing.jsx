@@ -77,7 +77,7 @@ const HeaderSection = ({ imageUrl }) => {
           </button>
         </div>
       </div>
-      <div className="hidden lg:block w-full max-w-[1280px] h-px bg-gray-300 mx-auto my-[50px] px-8"></div>
+      <div className="hidden lg:block w-full max-w-[1280px] h-px bg-[#A2A2A2] mx-auto my-[50px] px-8"></div>
 
       {/* 2. New Tablet Version - Visible between 768px and 1024px */}
       <div className="hidden md:flex lg:hidden flex-col items-center w-full mt-[100px] px-10">
@@ -128,7 +128,7 @@ const HeaderSection = ({ imageUrl }) => {
           </div>
         </div>
       </div>
-      <div className="hidden md:block lg:hidden w-full max-w-[950px] h-px bg-gray-300 mx-auto mt-[50px]"></div>
+      <div className="hidden md:block lg:hidden w-full max-w-[950px] h-px bg-[#A2A2A2] mx-auto mt-[50px]"></div>
 
       {/* 3. Small Screen & Mobile - Visible on screens < 768px */}
       <div className="block md:hidden bg-white w-full mt-[70px]">
