@@ -141,25 +141,25 @@ const HeaderSection = ({ imageUrl }) => {
           ></div>
         </div>
 
-        <div className="px-4 pt-4 pb-8">
+        <div className="px-4 py-4">
           <h1 className="text-[#2D2D2D] font-inter uppercase font-extrabold text-[24px] mb-3 leading-tight">
             Midweek Calm – ₹ 20% Off All Bookings
           </h1>
-          <p className="text-[#4D4D4D] font-montserrat text-[12px] font-normal mb-3">
+          <p className="text-[#4D4D4D] font-montserrat text-[12px] font-normal mb-[24px]">
             Take a mindful pause midweek. Book any session and enjoy 20% off—because calm shouldn't wait for the weekend.
           </p>
-          <p className="font-montserrat font-normal text-[12px] mb-4 text-[#4D4D4D]">
+          <p className="font-montserrat font-normal text-[12px] mb-[24px] text-[#4D4D4D]">
             by{" "}
             <span className="font-montserrat font-normal text-[12px] text-[#2D2D2D] underline decoration-solid underline-offset-2">
               INNERSTUDIO GLOW
             </span>
           </p>
-          <p>
+          <p className="mb-[24px]">
             <span className="text-[#2D2D2D] font-montserrat text-[14px] font-normal underline underline-offset-2 mb-3">Fitness & Body Movement</span>
             <span className="text-[#2D2D2D] font-montserrat text-[14px] font-normal underline underline-offset-2 mb-3"> / </span>
             <span className="text-[#2D2D2D] font-montserrat text-[14px] font-normal underline underline-offset-2 mb-3">Yoga</span>
-          </p>   
-          <div className="flex items-start gap-2 mb-4">
+          </p>  
+          <div className="flex items-start gap-2 mb-[24px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="20"
@@ -183,8 +183,8 @@ const HeaderSection = ({ imageUrl }) => {
               alt="arrow"
             />
           </button>
-          <div className="w-screen h-px bg-[#A2A2A2] mt-[50px]"></div>
         </div>
+        <div className="w-screen h-px bg-[#A2A2A2]  px-[50px] my-[40px] "></div>
       </div>
     </div>
   );
