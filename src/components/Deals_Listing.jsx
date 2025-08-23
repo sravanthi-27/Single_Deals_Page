@@ -37,20 +37,20 @@ const HeaderSection = ({ imageUrl }) => {
             off—because calm shouldn't wait for the weekend.
           </p>
 
-          <p className="font-montserrat font-normal text-[15px] xl:text-[20px] leading-[125%] text-[#4D4D4D]">
+          <p className="font-montserrat font-normal text-[15px] xl:text-[20px] leading-[125%] text-[#4D4D4D] -mb-2">
             by{" "}
             <span className="font-montserrat font-normal text-[#2D2D2D] underline decoration-solid underline-offset-2">
               INNERSTUDIO GLOW
             </span>
           </p>
           <br />
-          <p >
-            <span className="text-[#4D4D4D] font-montserrat text-[14px] xl:text-[16px] font-normal underline underline-offset-2 mb-4 max-w-[700px] text-left -mt-2">Fitness & Body Movement</span>
-            <span className="text-[#4D4D4D] font-montserrat text-[14px] xl:text-[16px] font-normal mb-4 max-w-[700px] text-left -mt-2"> / </span> 
-            <span className="text-[#4D4D4D] font-montserrat text-[14px] xl:text-[16px] font-normal underline underline-offset-2 mb-4 max-w-[700px] text-left -mt-2">Yoga</span>
+          <p>
+            <span className="text-[#4D4D4D] font-montserrat text-[14px] xl:text-[16px] font-normal underline underline-offset-4 mb-4 max-w-[700px] text-left">Fitness & Body Movement</span>
+            <span className="text-[#4D4D4D] font-montserrat text-[14px] xl:text-[16px] font-normal mb-4 max-w-[700px] text-left"> / </span> 
+            <span className="text-[#4D4D4D] font-montserrat text-[14px] xl:text-[16px] font-normal underline underline-offset-4 mb-4 max-w-[700px] text-left">Yoga</span>
           </p>
 
-          <div className="flex items-center gap-2 mb-8 max-w-[700px]">
+          <div className="flex items-center gap-2 mt-4 mb-4 max-w-[700px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="35"
@@ -98,16 +98,16 @@ const HeaderSection = ({ imageUrl }) => {
               Take a mindful pause midweek. Book any session and enjoy 20%
               off—because calm shouldn't wait for the weekend.
             </p>
-            <p className="font-montserrat font-normal text-[15px] leading-[125%] text-[#4D4D4D]">
+            <p className="font-montserrat font-normal text-[15px] leading-[125%] text-[#4D4D4D] mb-2">
               by{" "}
               <span className="font-montserrat text-[#2D2D2D] font-normal underline decoration-solid underline-offset-2">
                 INNERSTUDIO GLOW
               </span>
             </p>
-            <p>
-              <span className="text-[#2D2D2D] font-montserrat text-[15px] font-normal underline underline-offset-2 my-2">Fitness & Body Movement</span>
-              <span className="text-[#2D2D2D] font-montserrat text-[15px] font-normal underline underline-offset-2 my-2"> / </span>
-              <span className="text-[#2D2D2D] font-montserrat text-[15px] font-normal underline underline-offset-2 my-2">Yoga</span>
+            <p className="mb-4">
+              <span className="text-[#2D2D2D] font-montserrat text-[15px] font-normal underline underline-offset-4 mb-4">Fitness & Body Movement</span>
+              <span className="text-[#2D2D2D] font-montserrat text-[15px] font-normal mb-4"> / </span>
+              <span className="text-[#2D2D2D] font-montserrat text-[15px] font-normal underline underline-offset-4 mb-4">Yoga</span>
             </p>
             <div className="flex items-start gap-1 mb-4">
               <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 26 35">
