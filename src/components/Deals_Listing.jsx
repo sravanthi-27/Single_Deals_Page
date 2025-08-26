@@ -1,12 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import img from "../assets/weui_arrow-filled (1).svg";
 import headerImage from "../assets/d1.png";
+import DealPopup from "./DealPopup";
+
 
 const HeaderSection = ({ imageUrl }) => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const imageToDisplay = imageUrl || headerImage;
+  const openPopup = () => {
+    setIsPopupOpen(true);
+  };
+
+  const closePopup = () => {
+    setIsPopupOpen(false);
+  };
 
   return (
     <div className="w-full flex flex-col items-center">
+      <DealPopup isOpen={isPopupOpen} onClose={closePopup} />
       {/* 1. Large Desktop Version - Visible on screens > 1024px */}
       <div className="justify-between hidden lg:flex relative bg-white w-full max-w-[1280px] h-auto md:h-[530px] mt-[100px] overflow-visible ml-[150px] xl:ml-[50px] ">
         <div className="relative -left-[20px]">
@@ -67,7 +78,9 @@ const HeaderSection = ({ imageUrl }) => {
             </p>
           </div>
 
-          <button className="flex flex-row items-center justify-center bg-[#121212] text-white text-[16px] md:text-[18px] px-6 py-3 rounded-md hover:bg-gray-800 transition w-[180px] md:w-[200px] h-[50px] md:h-[60px]">
+          <button 
+          onClick={openPopup}
+          className="flex flex-row items-center justify-center bg-[#121212] text-white text-[16px] md:text-[18px] px-6 py-3 rounded-md hover:bg-gray-800 transition w-[180px] md:w-[200px] h-[50px] md:h-[60px]">
             GET THIS DEAL
             <img
               className="w-[10px] md:w-[11px] h-[18px] md:h-[20px] ml-2 opacity-100"
@@ -117,7 +130,9 @@ const HeaderSection = ({ imageUrl }) => {
                 Sector 45, Gurugram, Haryana 122018, India
               </p>
             </div>
-            <button className="flex flex-row items-center justify-center bg-[#121212] text-white text-[16px] md:text-[18px] px-6 py-4 rounded-md hover:bg-gray-800 transition w-[180px] md:w-[200px] h-[50px] md:h-[60px]">
+            <button
+             onClick={openPopup}
+             className="flex flex-row items-center justify-center bg-[#121212] text-white text-[16px] md:text-[18px] px-6 py-4 rounded-md hover:bg-gray-800 transition w-[180px] md:w-[200px] h-[50px] md:h-[60px]">
               GET THIS DEAL
               <img
                 className="w-[10px] md:w-[11px] h-[18px] md:h-[20px] ml-2 opacity-100"
@@ -175,7 +190,9 @@ const HeaderSection = ({ imageUrl }) => {
               Sector 45, Gurugram, Haryana 122018, India
             </p>
           </div>
-          <button className="flex flex-row items-center justify-center bg-[#121212] text-white text-[14px] px-5 py-2 rounded-md mb-6 w-full max-w-[200px]">
+          <button 
+          onClick={openPopup}
+          className="flex flex-row items-center justify-center bg-[#121212] text-white text-[14px] px-5 py-2 rounded-md mb-6 w-full max-w-[200px]">
             GET THIS DEAL
             <img
               className="w-[12px] h-[20px] ml-2 opacity-100"
